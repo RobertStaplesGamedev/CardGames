@@ -14,4 +14,5 @@ MonoBehaviour:
   name: Seer
   description: Seer Wakes up and looks at either another players card ot two of the
     cards in the centre
-  artwork: {fileID: 0}
+  artwork: {fileID: 21300000, guid: d30bd15be8c77484fa07d02d32b9fb8d, type: 3}
+  team: 0

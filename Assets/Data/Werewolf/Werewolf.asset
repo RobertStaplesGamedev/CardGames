@@ -13,5 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Werewolf
   description: Wakes up at night, knows who the other werewolfs are, Kills one person
-  artwork: {fileID: 0}
+  artwork: {fileID: 21300000, guid: d5066a3201bba4537a57f077d0be0456, type: 3}
   team: 1

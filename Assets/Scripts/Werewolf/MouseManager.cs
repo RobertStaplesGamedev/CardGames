@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class MouseManager : MonoBehaviour {
 
-	public WerewolfController controller;
+	[HideInInspector] public WerewolfController controller;
 
 	public GameObject background;
 	GameObject previouslyHighlightedCard;

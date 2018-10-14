@@ -13,4 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Troublemaker
   description: Swap any two player cards. You dont look at them
-  artwork: {fileID: 0}
+  artwork: {fileID: 21300000, guid: c5e41d961f2be4513acb8364ba3e2666, type: 3}
+  team: 0

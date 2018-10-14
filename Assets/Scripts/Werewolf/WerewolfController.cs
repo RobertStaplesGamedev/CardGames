@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Networking;
 
-public class WerewolfController : MonoBehaviour {
+public class WerewolfController : NetworkBehaviour {
 
 	public GameObject playerCard;
 	PlayerController playerController;
@@ -28,7 +29,10 @@ public class WerewolfController : MonoBehaviour {
 		mainPlayer = playerCard.GetComponent<WerewolfPlayer>();
 		playerController = this.GetComponent<PlayerController>();
 
-		playerController.AssginPlayers();
+
+		if (isServer) {
+			playerController.AssginPlayers();
+		}
 
 		canClick = false;
 		canHighlight = false;
@@ -36,8 +40,14 @@ public class WerewolfController : MonoBehaviour {
 	}
 
 	void Update() {
+
 		timer +=Time.deltaTime;
 		timerUI.text = Mathf.RoundToInt(timer).ToString();
+
+		if (!isServer) {
+			return;
+		}
+
 		if (Mathf.RoundToInt(timer) < 6 ) {
 			InitialFlip();
 		}

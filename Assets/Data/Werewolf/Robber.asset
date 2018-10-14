@@ -13,4 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Robber
   description: Choose another player, swap cards with them and look at that card
-  artwork: {fileID: 0}
+  artwork: {fileID: 21300000, guid: 9603ac5ec05c44b4b80091e73b6cc5eb, type: 3}
+  team: 0
